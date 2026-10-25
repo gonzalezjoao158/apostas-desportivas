@@ -23,6 +23,7 @@ Sistema de agentes para analisar jogos de futebol de forma disciplinada, à proc
 - `analises/` — uma análise por jogo (`AAAA-MM-DD-casa-vs-fora.md`).
 - `registo.csv` — registo de todas as apostas.
 - `relatorios/` — relatórios de desempenho.
+- `docs/pesquisa-agentes-ia.md` — pesquisa sobre como outros agentes/modelos de IA analisam apostas.
 
 ## Conceitos-chave
 - **Probabilidade implícita** = 1 / odd.
