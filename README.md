@@ -20,6 +20,7 @@ Sistema de agentes para analisar jogos de futebol de forma disciplinada, à proc
 4. Depois dos jogos, `apostas-revisor` fecha as apostas e faz o relatório.
 
 ## Ficheiros
+- `docs/contexto.md` — memória do projeto (regras, decisões, o que falta decidir); `docs/progresso.md` — feito / a seguir; `docs/rotina.md` — checklist da jornada.
 - `config.json` — banca inicial e regras de stake (método, % fixa, ¼ Kelly, tetos, VE mínimo, pausas).
 - `ferramentas/apostas.py` — calculadora comum a todos os agentes (Poisson, margem, VE, stake, métricas).
 - `analises/_modelo.md` — modelo de análise; uma análise por jogo (`AAAA-MM-DD-casa-vs-fora.md`).
