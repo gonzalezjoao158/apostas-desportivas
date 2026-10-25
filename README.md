@@ -20,9 +20,20 @@ Sistema de agentes para analisar jogos de futebol de forma disciplinada, à proc
 4. Depois dos jogos, `apostas-revisor` fecha as apostas e faz o relatório.
 
 ## Ficheiros
-- `analises/` — uma análise por jogo (`AAAA-MM-DD-casa-vs-fora.md`).
-- `registo.csv` — registo de todas as apostas.
+- `config.json` — banca inicial e regras de stake (método, % fixa, ¼ Kelly, tetos, VE mínimo, pausas).
+- `ferramentas/apostas.py` — calculadora comum a todos os agentes (Poisson, margem, VE, stake, métricas).
+- `analises/_modelo.md` — modelo de análise; uma análise por jogo (`AAAA-MM-DD-casa-vs-fora.md`).
+- `registo.csv` — registo de todas as apostas (a banca calcula-se a partir de `config.json` + lucros).
 - `relatorios/` — relatórios de desempenho.
+
+## Calculadora
+```bash
+python3 ferramentas/apostas.py poisson 1.65 1.10      # probabilidades a partir dos golos esperados
+python3 ferramentas/apostas.py margem 2.10 3.40 3.60  # margem da casa e prob. sem margem
+python3 ferramentas/apostas.py ve 0.52 2.10           # valor esperado e veredicto
+python3 ferramentas/apostas.py stake 0.52 2.10        # stake segundo config.json e apostas pendentes
+python3 ferramentas/apostas.py metricas               # ROI, acerto, CLV, por mercado, calibração
+```
 
 ## Conceitos-chave
 - **Probabilidade implícita** = 1 / odd.

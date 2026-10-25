@@ -1,1 +1,1 @@
-data,competicao,jogo,mercado,casa_apostas,odd,prob_propria,ve,stake,odd_fecho,resultado,lucro,banca
+id,data,competicao,jogo,mercado,selecao,casa_apostas,odd,prob_propria,ve,stake,odd_fecho,estado,lucro,analise

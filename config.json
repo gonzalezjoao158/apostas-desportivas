@@ -1,0 +1,12 @@
+{
+  "banca_inicial": null,
+  "moeda": "EUR",
+  "metodo_stake": "fixo",
+  "stake_fixa": 0.01,
+  "kelly_fracao": 0.25,
+  "stake_maxima": 0.02,
+  "exposicao_maxima": 0.05,
+  "ve_minimo": 0.05,
+  "pausa_queda_do_pico": 0.20,
+  "pausa_dias_seguidos_perdas": 3
+}
